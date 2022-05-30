@@ -1,0 +1,458 @@
+/* Propiedades Generales */
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+/* Propiedades del Main */
+main{
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Propiedades de las etiquetas de título y textos */
+    /* etiquetas h */
+h1, h2, h3{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}    
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 35px; 
+    border-left: 7px solid #23535C;
+    text-indent: 10px;
+    margin: 20px 0px;  
+    height: 50px;
+    padding-left: 5px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+/* Etiqueta span */
+.nombreCiudad{
+    color: #7AC7CF;
+}
+
+.nombreCiudadOsc{
+    color: #052125;
+}
+
+.colorTOP10Famosos {
+    color: #89adb1;    
+}
+
+.letraTop10{
+    text-transform: uppercase;  
+}
+
+.letraFamosos{
+    text-transform: capitalize; 
+}
+
+/* Boton de Subir */
+.inicio{    
+    position: fixed;
+    right: 20px;
+    bottom: 20px;    
+}
+
+.inicio a{
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    color:#0094B1;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.inicio a:hover{
+    color:#343738;
+}
+
+/* Header */
+header{
+    background-color: #7AC7CF; 
+    text-align: center;
+    background-image: url(../img/fondo.jpg);
+    background-size:cover; 
+    background-position-y: -230px;
+    background-attachment: fixed;    
+    margin-bottom: 20px;  
+}
+
+/* Header Logo*/
+header figure{    
+    padding: 20px;
+}
+header figure img{
+    width: 180px;    
+}
+
+/* Header Menu*/
+header nav ul{
+    height: 50px;
+}
+header nav ul li{
+    width: 150px;
+    background-color: #0094B1;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;    
+    text-transform: uppercase;  
+    display: block;
+    color: black; 
+    padding: 10px;
+    letter-spacing: 1px;  
+}
+
+header nav ul li a:hover{
+    background-color: #FFFCFD;
+    border-bottom: 5px solid #0094B1;
+}
+
+header h1{
+    padding: 80px 0px;
+    color: #f4f3fa;
+}
+
+/* Caracteristicas generales de los section */
+#Informacion, #QueHacer, #FotosCiudad,#FamososAtracciones{   
+    width: 1200px; 
+    margin: 0px auto;  
+    margin-bottom: 50px;
+}
+
+#Informacion{    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+#Informacion h2{
+    width: 388px; 
+    
+}
+#Informacion p, #Informacion article{    
+    width: 360px;    
+    padding: 20px;
+    text-align: justify;        
+}
+#Informacion article h3{
+    margin-bottom: 20px;
+}
+
+#Informacion article ol li{
+    list-style-position: inside;
+    padding: 2px;
+} 
+
+/* Section QueHacer */
+#QueHacer{    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#QueHacer h2{
+    width: 100%;
+}
+
+#QueHacer article{    
+    width: 373px; 
+    position: relative;
+}
+
+#QueHacer article figure{
+    background-color: #7AC7CF;
+    height: 250px; 
+}
+
+#QueHacer article figure img{
+    width: 100%; 
+    height: 100%;     
+}
+
+#QueHacer article figure img:hover{
+    border: 1px solid #23535C;    
+}
+
+#QueHacer article h3{
+    position: absolute;    
+    padding: 5px 10px;
+    top: 200px;    
+    width: 310px;
+    color: #FFFCFD;
+    background-color: #b5d1d4;
+}
+#QueHacer article p{
+    margin-top: 15px;
+    text-align: justify;
+}
+
+/* Section FotosCiudad  */
+
+#FotosCiudad article{
+    display: grid;
+    grid-template-columns: repeat(3,380px);
+    grid-template-rows: repeat(2, 200px);
+    grid-gap: 30px;
+}
+
+#FotosCiudad article figure{
+    background-color: #7AC7CF;
+}
+
+#FotosCiudad article figure img{
+    width: 100%;
+    height: 100%;
+}
+
+#FotosCiudad article figure:nth-of-type(1){
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;    
+}
+
+#FotosCiudad article figure:nth-of-type(2){
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#FotosCiudad article figure:nth-of-type(3){
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#FotosCiudad article figure:nth-of-type(4){
+    grid-column: 2/ span 2;
+    grid-row: 2/ span 1;
+} 
+
+/* Section Registro  */
+#Registro{
+    text-align: center;
+    padding: 25px;
+    background-color: #23535C;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#Registro form{
+    font-size: 20px;
+}
+
+#Registro form label, #Registro form input[type="submit"]{
+    font-weight: bold; 
+} 
+
+#Registro form label{
+    margin-right: 15px;
+    letter-spacing: 6px;
+}
+
+#Registro form input{
+    padding: 5px;    
+}
+
+#Registro form input[type="email"]{
+    width: 400px;
+    margin-right: 15px;       
+}
+
+#Registro form input[type="email"]:hover{
+    background-color: #bcdee2;
+}
+
+#Registro form input[type="submit"]{
+    width: 100px;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    cursor: pointer;  
+          
+}
+
+/* Section Atracciones y Famosos */
+    /* Article Top 10 */
+#FamososAtracciones{
+    display: flex;
+    flex-wrap: wrap;     
+}
+#FamososAtracciones h2{
+    letter-spacing: 10px;
+}
+
+#FamososAtracciones article{
+    width: 600px;
+}
+
+#FamososAtracciones article:nth-of-type(1) table th, #FamososAtracciones article:nth-of-type(1) table td{
+    text-indent: 2px;
+    border: 5px solid white;
+    padding: 15px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+#FamososAtracciones article:nth-of-type(1) table th{    
+    background-color: #0094B1;    
+}
+
+#FamososAtracciones article:nth-of-type(1) table td{
+    background-color: #7AC7CF;    
+}
+
+    /*Article Famosos Nacidos Aqui */
+#FamososAtracciones article:nth-of-type(2)  ul li{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 150px 450px;
+    grid-template-rows: repeat(2, 60px);
+}
+
+#FamososAtracciones article:nth-of-type(2) ul li figure{
+    margin:10px 25px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;    
+}
+
+#FamososAtracciones article:nth-of-type(2) ul li figure img{
+    width: 100px;
+    height: 100px;     
+    border-radius: 60px; 
+    border: 1px solid #23535C; 
+    background-color: #7AC7CF;      
+}
+
+#FamososAtracciones article:nth-of-type(2) ul h3{     
+    letter-spacing: 3px; 
+    position: relative; 
+    top: 28px;    
+}
+
+#FamososAtracciones article:nth-of-type(2) ul p{     
+    letter-spacing: 3px;         
+} 
+
+/* Section QuieroViajar*/
+#QuieroViajar{
+    text-align: center;
+    padding: 20px;
+    background-color: #0094B1;
+    background-image: url(../img/formulario.jpg);
+    background-size: cover;  
+    background-color: #7AC7CF;   
+}
+
+#QuieroViajar form{
+    margin: 0px auto;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;     
+}
+
+#QuieroViajar form h2{
+    color: #0094B1;
+    border: 0px;
+    width: 100%;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#QuieroViajar form fieldset{ 
+    margin: 0px auto;    
+    text-align: left;
+    
+}
+
+#QuieroViajar form fieldset input,#QuieroViajar form fieldset label, #QuieroViajar form fieldset textarea{
+    width: 380px;
+    padding : 10px; 
+    display: block;   
+}
+
+#QuieroViajar form fieldset label{
+    font-size: 15px; 
+    letter-spacing: 5px;      
+}
+
+#QuieroViajar form fieldset textarea{
+   resize: none;    
+}
+
+#QuieroViajar form fieldset input[type="checkbox"], #QuieroViajar form fieldset label:nth-of-type(4), #QuieroViajar form fieldset input[type="submit"]{
+    display: inline-block;       
+}
+
+#QuieroViajar form fieldset input[type="checkbox"]{
+    width: 20px;
+    height: 35px;  
+}
+
+#QuieroViajar form fieldset label:nth-of-type(4){
+    width: 200px;
+    font-size: 13px;
+    padding-right: 30px;          
+}
+
+#QuieroViajar form fieldset input[type="submit"]{    
+    width: 130px;        
+    cursor: pointer;
+    position: relative;  
+    top: -5px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+/* Section Footer */
+footer{
+    text-align: center;    
+    background-color: #23535C;
+    padding: 20px;
+}
+
+footer ul{    
+    display: block;
+}
+    
+footer ul li{
+    width: 64px;
+    height: 64px;
+    margin: 1px;
+    background-color: #23535C;
+    background-image: url(../img/iconos.png);
+    display: inline-block;
+    cursor: pointer;
+}
+    
+footer ul li:nth-child(1){
+    background-position: 0px 0px;
+}
+    
+footer ul li:nth-child(2){
+    background-position: -64px 0px;
+}
+    
+footer ul li:nth-child(3){
+    background-position: 64px 0px;
+}
+    
+footer ul li:nth-child(1):hover{
+    background-position: 0px 64px;
+}
+    
+footer ul li:nth-child(2):hover{
+    background-position: -64px 64px;
+}
+    
+footer ul li:nth-child(3):hover{
+    background-position: 64px 64px;
+}
